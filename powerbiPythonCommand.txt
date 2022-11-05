@@ -1,0 +1,15 @@
+import sys
+
+myPath = '<c:/users/username/folder>'
+SPREADSHEET_ID='<SPREADSHEET_ID>'
+Range='<Range>'
+
+sys.path.append(myPath)
+
+from gplanilhas import gPlanilhas
+import os
+
+os.chdir(myPath)
+
+df = gPlanilhas().main(SPREADSHEET_ID,Range)
+
